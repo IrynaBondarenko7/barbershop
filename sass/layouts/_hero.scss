@@ -1,0 +1,38 @@
+.hero {
+  padding-top: 112px;
+  padding-bottom: 209px;
+}
+.hero-pretitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: $mainwhiteColor;
+  margin-bottom: 20px;
+}
+.hero-text {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  max-width: 321px;
+}
