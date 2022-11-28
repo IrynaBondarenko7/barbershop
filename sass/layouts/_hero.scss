@@ -4,7 +4,7 @@
 }
 .hero-pretitle {
   font-weight: 600;
-  font-size: 11px;
+  font-size: 2vw;
   line-height: 1.36px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -19,20 +19,30 @@
     height: 1px;
     background-color: currentColor;
   }
+  @include mobile {
+    font-size: 11px;
+  }
 }
 .hero-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 10vw;
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: $mainwhiteColor;
   margin-bottom: 20px;
+  @include mobile {
+    font-size: 48px;
+  }
 }
 .hero-text {
-  font-size: 16px;
+  font-size: 3vw;
   line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  max-width: 321px;
+  max-width: 205px;
+  @include mobile {
+    font-size: 16px;
+    max-width: 321px;
+  }
 }
