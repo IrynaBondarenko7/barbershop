@@ -1,22 +1,25 @@
 .btn {
-  min-width: 160px;
-  height: 40px;
-  border: 1px solid $accentColor;
-  border-radius: 25px;
-  background-color: transparent;
-  font-weight: 600;
-  font-size: 3vw;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: $titleColor;
-  transition: background-color 200ms linear, color 200ms linear;
-  @include mobile {
-    font-size: 12px;
-  }
-  &:hover,
-  &:focus {
-    background-color: $accentColor;
+    min-width: 160px;
+    height: 40px;
+    border: 1px solid $accentColor;
+    border-radius: 25px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $titleColor;
+    transition: background-color 200ms linear, color 200ms linear;
+    @include mobile {
+        font-size: 12px;
+    }
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+        color: $mainwhiteColor;
+    }
+}
+.btn-dark {
     color: $mainwhiteColor;
-  }
 }

@@ -1,3 +1,11 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+.list {
+  list-style: none;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

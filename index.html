@@ -1,41 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <title>BarberShop</title>
-  </head>
-  <body>
-    <!--------------HEADER---------------->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <title>BarberShop</title>
+    </head>
+    <body>
+        <!------------------------HEADER------------------------------->
+        <header class="header">
+            <div class="container header-container">
+                <nav class="header-nav">
+                    <a class="logo" href="#"
+                        ><svg class="icon-logo" width="69" height="56">
+                            <use
+                                href="./images/sprite.svg#icon-Logo"
+                            ></use></svg
+                    ></a>
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <a href="#" class="header-link current-link"
+                                >About</a
+                            >
+                        </li>
+                        <li class="header-item">
+                            <a href="#" class="header-link"
+                                >Services and prices</a
+                            >
+                        </li>
+                        <li class="header-item">
+                            <a href="#" class="header-link">Barbers</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#" class="header-link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-contacts">
+                    <a class="header-tel" href="tel:+380441111111"
+                        >+38 044 111 11 11</a
+                    >
+                    <button type="button" class="btn btn-dark">
+                        online-booking
+                    </button>
+                </div>
+                <button type="button" class="menu-open" data-menu-open>
+                    <svg class="icon-menu" width="69" height="56">
+                        <use href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu" data-menu>
+                    <div class="container-menu">
+                        <div class="mob-menu-top">
+                            <button
+                                type="button"
+                                class="menu-close"
+                                data-menu-close
+                            >
+                                <svg class="icon-close" width="40" height="40">
+                                    <use
+                                        href="./images/sprite.svg#icon-close_menu"
+                                    ></use>
+                                </svg>
+                            </button>
+                            <nav class="mobile-navigation">
+                                <ul class="mobile-list">
+                                    <li class="mobile-list-item">
+                                        <a
+                                            class="mobile-list-link current-link"
+                                            href="#"
+                                            >About</a
+                                        >
+                                    </li>
+                                    <li class="mobile-list-item">
+                                        <a class="mobile-list-link" href="#"
+                                            >Services and prices</a
+                                        >
+                                    </li>
+                                    <li class="mobile-list-item">
+                                        <a class="mobile-list-link" href="#"
+                                            >Barbers</a
+                                        >
+                                    </li>
+                                    <li class="mobile-list-item">
+                                        <a class="mobile-list-link" href="#"
+                                            >Contacts</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="mob-menu-buttom">
+                            <div class="contacts-wrap">
+                                <a class="mob-menu-tel" href="tel:+380441111111"
+                                    >+38 044 111 11 11</a
+                                >
+                                <button type="button" class="btn">
+                                    online-booking
+                                </button>
+                            </div>
+                            <ul class="menu-soc-list">
+                                <li class="menu-soc-item">
+                                    <a
+                                        href="#"
+                                        class="menu-soc-link"
+                                        target="_blank"
+                                        rel="noopener noreferrer nofollow"
+                                        >Instagram</a
+                                    >
+                                </li>
+                                <li class="menu-soc-item">
+                                    <a
+                                        href="#"
+                                        class="menu-soc-link"
+                                        target="_blank"
+                                        rel="noopener noreferrer nofollow"
+                                        >Youtube</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!------------------------HERO------------------------------->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-soc-wrap">
+                    <ul class="hero-list">
+                        <li class="hero-item">
+                            <a
+                                class="hero-soc-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                                >Instagram</a
+                            >
+                        </li>
+                        <li class="hero-item">
+                            <a
+                                class="hero-soc-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                                >Youtube</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-text-wrap">
+                    <p class="hero-pretitle">A hair salon for men in Kyiv</p>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-text">
+                        We are experts in trendy men’s haircuts. We work
+                        quickly, carefully and with style.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--------------HEADER----------------
     <div class="background-wrap">
-    <header class="header"></header>
+    <header class="header">
     <div class="container header-container">
-      <a class="logo" href="#"><svg class="icon-logo" width="69" height="56">
-        <use href="./images/sprite.svg#icon-Logo"></use>
-      </svg></a>
-      <button type="button" class="menu-open"><svg class="icon-menu"width="69" height="56">
+      
+      <button type="button" class="menu-open" data-menu-open><svg class="icon-menu"width="69" height="56">
         <use href="./images/sprite.svg#icon-menu"></use>
       </svg></button>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
       <div class="container-menu">
         <div class="mob-menu-top">
-<button type="button" class="menu-close"><svg class="icon-close"width="40" height="40">
+<button type="button" class="menu-close" data-menu-close><svg class="icon-close"width="40" height="40">
         <use href="./images/sprite.svg#icon-close_menu"></use>
       </svg></button>
       <nav class="mobile-navigation">
@@ -59,8 +210,15 @@
       </div>
     </div>
     </div>
+    </header>
+    <section class="soc">
+<ul>
+  <li><a href="#" target="_blank" rel="noopener noreferrer nofollow>Instagram</a></li>
+  <li><a href="#" target="_blank" rel="noopener noreferrer nofollow>Youtube</a></li>
+</ul>
+    </section>
     <main>
-      <!--------------------HERO----------------->
+      <!--------------------HERO-----------------
       <section class="hero">
         <div class="container">
           <p class="hero-pretitle">A hair salon for men in Kyiv</p>
@@ -72,7 +230,7 @@
         </div>
       </section>
       </div>
-      <!-----------------ABOUT----------------->
+      <!-----------------ABOUT-----------------
       <section class="about">
         <div class="container">
           <p>About</p>
@@ -132,7 +290,7 @@
           <button type="button">online-booking</button>
         </div>
       </section>
-      <!------------------------------------REASONS-------------------------->
+      <!------------------------------------REASONS--------------------------
       <section class="reasons"></section>
       <div class="container">
         <p>Old traditional school</p>
@@ -160,7 +318,7 @@
           </li>
         </ul>
       </div>
-      <!--------------------BARBERS-------------------------------->
+      <!--------------------BARBERS--------------------------------
       <section class="barbers">
         <div class="containers">
           <p>For true enjoyers of the atmosphere</p>
@@ -250,7 +408,7 @@
           </ul>
         </div>
       </section>
-      <!-----------------GALLERY------------>
+      <!-----------------GALLERY------------
       <section class="gallery">
         <div class="container">
           <p>In Latin, "barba" means "beard"</p>
@@ -262,7 +420,7 @@
           </ul>
         </div>
       </section>
-      <!------------------------CONTACTS-------------->
+      <!------------------------CONTACTS--------------
       <section class="contacts">
         <div class="container">
           <div>
@@ -312,14 +470,16 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container">
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
-        </ul>
-        <p>&#xa9;Copyright 2020</p>
-      </div>
-    </footer>
-  </body>
+    <!--------------------FOOTER-------------------------->
+        <footer>
+            <div class="container">
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+                <p>&#xa9;Copyright 2020</p>
+            </div>
+        </footer>
+        <script src="./js/menu.js"></script>
+    </body>
 </html>

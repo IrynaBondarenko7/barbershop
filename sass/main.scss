@@ -1,9 +1,10 @@
-@import "./utils/vars";
-@import "./base/reset";
-@import "./utils/mixins";
-@import "./base/common";
-@import "./components/container";
-@import "./components/btn";
+@import './utils/vars';
+@import './base/reset';
+@import './utils/mixins';
+@import './base/common';
+@import './components/container';
+@import './components/btn';
 
-@import "./layouts/header";
-@import "./layouts/hero";
+@import './layouts/header';
+@import './layouts/hero';
+@import './components/current-link';
