@@ -1,0 +1,78 @@
+.about-container {
+    display: flex;
+    gap: 30px;
+}
+.about-list {
+    display: none;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    @include desktop {
+        flex-direction: row;
+    }
+}
+.about-item {
+    width: 330px;
+    @include desktop {
+        width: 270px;
+    }
+}
+
+.about-wrap {
+    @include tablet {
+        max-width: 330px;
+    }
+    @include desktop {
+        max-width: 470px;
+    }
+}
+.about-title {
+    font-size: 5vw;
+    color: $titleColor;
+    max-width: 306px;
+    margin-bottom: 20px;
+    @include mobile {
+        font-size: 28px;
+    }
+    @include tablet {
+        max-width: 330px;
+    }
+    @include desktop {
+        max-width: 470px;
+        font-size: 42px;
+    }
+}
+.about-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: $textcolor;
+    margin-bottom: 20px;
+    @include mobile {
+        font-size: 16px;
+    }
+    @include tablet {
+        font-size: 18px;
+    }
+}
+.about-description {
+    font-size: 2vw;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    color: $textcolor;
+    margin-bottom: 40px;
+    @include mobile {
+        font-size: 14px;
+    }
+    @include tablet {
+        margin-bottom: 77px;
+    }
+    @include desktop {
+        margin-bottom: 42px;
+    }
+}

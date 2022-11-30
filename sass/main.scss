@@ -3,8 +3,13 @@
 @import './utils/mixins';
 @import './base/common';
 @import './components/container';
+@import './components/section-padding';
 @import './components/btn';
+@import './components/pretitle';
+@import './components/title';
 
 @import './layouts/header';
 @import './layouts/hero';
+@import './layouts/about';
+
 @import './components/current-link';

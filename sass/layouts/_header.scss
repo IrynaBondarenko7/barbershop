@@ -3,6 +3,9 @@
     padding-bottom: 40px;
     position: absolute;
     width: 100%;
+    @include desktop {
+        padding-right: 17px;
+    }
 }
 .header-container {
     display: flex;
@@ -49,6 +52,10 @@
         gap: 40px;
         flex-direction: column-reverse;
         row-gap: 20px;
+    }
+    @include desktop {
+        flex-direction: row;
+        align-items: center;
     }
 }
 .header-tel {

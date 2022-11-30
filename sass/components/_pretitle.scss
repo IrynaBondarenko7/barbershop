@@ -1,0 +1,20 @@
+.pretitle {
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: $titleColor;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    @include mobile {
+        font-size: 11px;
+    }
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: $titleColor;
+    }
+}

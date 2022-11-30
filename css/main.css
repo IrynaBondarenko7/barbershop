@@ -48,6 +48,39 @@ body {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.section-padding {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .btn {
@@ -78,11 +111,52 @@ body {
   color: #ffffff;
 }
 
+.pretitle {
+  font-weight: 600;
+  font-size: 2vw;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .pretitle {
+    font-size: 11px;
+  }
+}
+.pretitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.section-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 8vw;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 42px;
+  }
+}
+
 .header {
   padding-top: 40px;
   padding-bottom: 40px;
   position: absolute;
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-right: 17px;
+  }
 }
 
 .header-container {
@@ -139,6 +213,12 @@ body {
     gap: 40px;
     flex-direction: column-reverse;
     row-gap: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -289,11 +369,16 @@ body {
 }
 
 .hero-soc-wrap {
-  width: 100px;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 40px;
-  padding-left: 27px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero-soc-wrap {
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 40px;
+    padding-left: 27px;
+  }
 }
 
 .hero-list {
@@ -365,6 +450,11 @@ body {
     padding: 272px 97px 237px 97px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-text-wrap {
+    padding: 272px 100px 208px 100px;
+  }
+}
 
 .hero-pretitle {
   font-weight: 600;
@@ -404,6 +494,11 @@ body {
     font-size: 48px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 72px;
+  }
+}
 
 .hero-text {
   font-size: 3vw;
@@ -416,6 +511,120 @@ body {
   .hero-text {
     font-size: 16px;
     max-width: 321px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    font-size: 18px;
+    max-width: 357px;
+  }
+}
+
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-list {
+    flex-direction: row;
+  }
+}
+
+.about-item {
+  width: 330px;
+}
+@media screen and (min-width: 1200px) {
+  .about-item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-wrap {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-wrap {
+    max-width: 470px;
+  }
+}
+
+.about-title {
+  font-size: 5vw;
+  color: #303030;
+  max-width: 306px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .about-title {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-title {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-title {
+    max-width: 470px;
+    font-size: 42px;
+  }
+}
+
+.about-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3vw;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .about-text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-text {
+    font-size: 18px;
+  }
+}
+
+.about-description {
+  font-size: 2vw;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 480px) {
+  .about-description {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-description {
+    margin-bottom: 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-description {
+    margin-bottom: 42px;
   }
 }
 
