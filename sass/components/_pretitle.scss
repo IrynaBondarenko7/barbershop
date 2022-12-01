@@ -15,6 +15,9 @@
         content: '';
         width: 60px;
         height: 1px;
-        background-color: $titleColor;
+        background-color: currentColor;
     }
+}
+.pretitle-dark {
+    color: rgba(157, 164, 189, 0.6);
 }
