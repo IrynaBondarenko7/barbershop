@@ -30,6 +30,20 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -958,6 +972,45 @@ body {
 .barbers-soc-link:hover svg {
   fill: #ff6c00;
   transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-pretitle {
+    margin-bottom: 71px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-pretitle {
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-img {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.gallery-item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .current-link {

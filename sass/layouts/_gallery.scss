@@ -1,0 +1,29 @@
+.gallery-pretitle {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 71px;
+    }
+    @include tablet {
+        margin-bottom: 44px;
+    }
+}
+.gallery-img {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+.gallery-list {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+.gallery-item {
+    width: 100%;
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
+}
