@@ -20,8 +20,7 @@
         gap: 131px;
     }
 }
-.logo {
-}
+
 .icon-logo {
     fill: $mainwhiteColor;
     @include tablet {
@@ -36,14 +35,18 @@
         gap: 30px;
     }
 }
-.header-item {
-}
+
 .header-link {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33px;
     letter-spacing: 0.1em;
     color: $mainwhiteColor;
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
 }
 .header-contacts {
     display: none;
@@ -75,7 +78,7 @@
         display: none;
     }
 }
-//Momile menu-----------------//
+//Mobile menu-----------------//
 .menu-close {
     background-color: transparent;
     border: none;
@@ -119,6 +122,10 @@
     line-height: 1.4;
     letter-spacing: 0.1em;
     color: $titleColor;
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
     @include mobile {
         font-size: 18px;
     }
@@ -146,15 +153,15 @@
     @include mobile {
         padding-left: 100px;
     }
-}
-.menu-soc-list::before {
-    position: absolute;
-    left: 0;
-    content: '';
-    width: 60px;
-    height: 1px;
-    background-color: #303030;
-    top: 9px;
+    &::before {
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: #303030;
+        top: 9px;
+    }
 }
 .menu-soc-item:not(:last-child) {
     margin-bottom: 24px;

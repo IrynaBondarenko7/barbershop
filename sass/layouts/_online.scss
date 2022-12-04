@@ -1,19 +1,62 @@
 .contacts-box-wrap {
     background-color: #191c26;
-}
-.online {
-}
-.online-form {
+    background-repeat: no-repeat;
+    background-image: url(../images/contacts/contacts-bg-mob.png);
+    background-position: bottom;
+    background-size: 100% 47%;
+    @include retina {
+        background-image: url(../images/contacts/contacts-bg-mob-2x.png);
+    }
     @include tablet {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
+        background-image: url(../images/contacts/contacts-bg-tab.png);
+        @include retina {
+            background-image: url(../images/contacts/contacts-bg-tab-2x.png);
+            background-size: 100% 47%;
+        }
+    }
+
+    @include desktop {
+        background-image: url(../images/contacts/contacts-bg-desk.png);
+        background-position: right;
+        background-size: calc(50% - 15px) 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        @include retina {
+            background-image: url(../images/contacts/contacts-bg-desk-2x.png);
+        }
     }
 }
-.modal-field {
-    // @media screen and (max-widht: 767px)
-    margin-bottom: 44px;
+.contacts-box-wrap > .container {
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.online {
+    @include desktop {
+        width: calc(100% / 2 - 15px);
+    }
+}
+.online-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.online-input {
+    width: 100%;
+    height: 24px;
+    padding-bottom: 8px;
+    @include tablet {
+        width: 330px;
+    }
+    @include desktop {
+        width: 270px;
+    }
+}
+.online-textarea {
+    width: 100%;
+    resize: none;
+    height: 76px;
 }
 .online-item {
     border: none;
@@ -22,19 +65,12 @@
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
     background-color: transparent;
     transition: border-color 250ms linear;
+    margin-bottom: 44px;
     &:focus {
         border-color: $mainwhiteColor;
     }
     &:focus::placeholder {
         color: $mainwhiteColor;
-    }
-}
-.online-input {
-    width: 100%;
-    height: 24px;
-    padding-bottom: 8px;
-    @include tablet {
-        width: 330px;
     }
 }
 .online-item::placeholder {
@@ -49,19 +85,8 @@
         font-size: 11px;
     }
 }
-
-.online-textarea {
-    resize: none;
-    width: 100%;
-    height: 76px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        width: 690px;
-    }
-}
-
 .btn-online {
-    @media screen and (max-widht: 767px) {
-        display: block;
+    @media screen and (max-width: 767px) {
         margin: 0 auto;
     }
 }

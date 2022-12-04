@@ -25,7 +25,7 @@
         <header class="header">
             <div class="container header-container">
                 <nav class="header-nav">
-                    <a class="logo" href="#"
+                    <a class="logo" href="./index.html"
                         ><svg class="icon-logo" width="69" height="56">
                             <use
                                 href="./images/sprite.svg#icon-Logo"
@@ -33,20 +33,20 @@
                     ></a>
                     <ul class="header-list">
                         <li class="header-item">
-                            <a href="#" class="header-link current-link"
+                            <a href="#about" class="header-link"
                                 >About</a
                             >
                         </li>
                         <li class="header-item">
-                            <a href="#" class="header-link"
+                            <a href="#prices" class="header-link"
                                 >Services and prices</a
                             >
                         </li>
                         <li class="header-item">
-                            <a href="#" class="header-link">Barbers</a>
+                            <a href="#barbers" class="header-link">Barbers</a>
                         </li>
                         <li class="header-item">
-                            <a href="#" class="header-link">Contacts</a>
+                            <a href="#contacts" class="header-link">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -81,7 +81,7 @@
                                 <ul class="mobile-list">
                                     <li class="mobile-list-item">
                                         <a
-                                            class="mobile-list-link current-link"
+                                            class="mobile-list-link"
                                             href="#"
                                             >About</a
                                         >
@@ -175,7 +175,7 @@
         </section>
 
         <!-----------------ABOUT----------------->
-        <section class="about section-padding">
+        <section class="about section-padding" id="about">
             <div class="container about-container">
                 <ul class="about-list">
                     <li class="about-item">
@@ -247,7 +247,7 @@
             </div>
         </section>
         <!---------PRISES----------------->
-        <section class="prices section-padding">
+        <section class="prices section-padding" id="prices">
             <div class="container">
                 <p class="pretitle pretitle-dark">
                     Spend your time with the best masters
@@ -341,7 +341,7 @@
         </section>
 
         <!--------------------BARBERS-------------------------------->
-        <section class="barbers section-padding barbers-section">
+        <section class="barbers section-padding barbers-section" id="barbers">
             <div class="container">
                 <div class="barbers-text-wrap">
                     <p class="pretitle barbers-pretitle">
@@ -739,89 +739,85 @@
         </section>
         <!------------------------ONLINE-------------->
         <div class="contacts-box-wrap">
+            <div class="container">
                 <section class="online section-padding">
-                    <div class="container">
+                    <div class="">
                     <h2 class="section-title title-dark">Online-booking</h2>
                     <form class="online-form">
-                        <div class="modal-field">
                             <input
                                 type="text"
                                 name="user-name"
                                 class="online-input online-item"
                                 placeholder="Name*"
                             />
-                        </div>
-                        <div class="modal-field">
                             <input
                                 type="tel"
                                 name="user-tel"
                                 class="online-input online-item"
                                 placeholder="Phone*"
                             />
-                        </div>
-                        <div class="modal-field">
                             <textarea
                                 name="user-comment"
                                 placeholder="Message"
                                 class="online-textarea online-item"
                             ></textarea>
-                        </div>
                         <button type="submit" class="btn btn-dark btn-online">
                             Send
                         </button>
                     </form>
                     </div>
                 </section>
-                <!----------------------CONTACTS-------------->
-         <section class="contscts section-padding">
-            <div class="container">
-                    <h2 class="section-title title-dark">Contacts</h2>
-                    <div class="contacts-list-wrap">
-                    <ul class="contacts-list">
-                        <li class="contacts-item">
-                            <a href="#" class="contacts-item-link contacts-link-map" target="_blank"
-                                    rel="noopener noreferrer nofollow">
-                            <svg width="24" height="24" class="contacts-icon">
-                                <use href="./images/sprite.svg#icon-map-pin"></use>
-                            </svg>
-                            st. Vasilkovaya, 7A Kiev, 08132
-                            </a>
-                        </li>
-                        <li class="contacts-item">
-                            <a href="#" class="contacts-item-link contacts-link-tel"
-                            ><svg width="24" height="24" class="contacts-icon">
-                                <use href="./images/sprite.svg#icon-phone"></use>
-                            </svg>
-                            +38 044 111 11 11</a
-                            >
-                        </li>
-                        <li class="contacts-item">
-                            <a href="#" class="contacts-item-link contacts-link-mail" 
-                            ><svg width="24" height="24" class="contacts-icon">
-                                <use href="./images/sprite.svg#icon-mail"></use>
-                            </svg>
-                            barbershop@email.com</a
-                            >
-                        </li>
-                    </ul>
-                    <div class="contacts-text-wrap">
-            <p class="pretitle contacts-pretitle">Working hours</p>
-            <p class="contacts-text">Every day from 9:00 to 22:00</p>
+                <!------------------------CONTACTS-------------->
+                <section class="contscts section-padding" id="contacts">
+                    <div class="">
+                            <h2 class="section-title title-dark">Contacts</h2>
+                            <div class="contacts-list-wrap">
+                            <ul class="contacts-list">
+                                <li class="contacts-item">
+                                    <a href="#" class="contacts-item-link contacts-link-map" target="_blank"
+                                            rel="noopener noreferrer nofollow">
+                                    <svg width="24" height="24" class="contacts-icon">
+                                        <use href="./images/sprite.svg#icon-map-pin"></use>
+                                    </svg>
+                                    st. Vasilkovaya, 7A Kiev, 08132
+                                    </a>
+                                </li>
+                                <li class="contacts-item">
+                                    <a href="#" class="contacts-item-link contacts-link-tel"
+                                    ><svg width="24" height="24" class="contacts-icon">
+                                        <use href="./images/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    +38 044 111 11 11</a
+                                    >
+                                </li>
+                                <li class="contacts-item">
+                                    <a href="#" class="contacts-item-link contacts-link-mail" 
+                                    ><svg width="24" height="24" class="contacts-icon">
+                                        <use href="./images/sprite.svg#icon-mail"></use>
+                                    </svg>
+                                    barbershop@email.com</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="contacts-text-wrap">
+                    <p class="pretitle contacts-pretitle">Working hours</p>
+                    <p class="contacts-text">Every day from 9:00 to 22:00</p>
+                            </div>
+                            </div>
                     </div>
-                    </div>
+                </section>
             </div>
-        </section>
         </div>
         
     </main>
     <!--------------------FOOTER-------------------------->
-        <footer>
-            <div class="container">
-                <ul>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Youtube</a></li>
+        <footer class="footer">
+            <div class="container footer-container">
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-soc-link" href="#" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
+                    <li class="footer-item"><a class="footer-soc-link" href="#" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
                 </ul>
-                <p>&#xa9;Copyright 2020</p>
+                <p class="footer-text"><span>&#xa9;</span>Copyright 2020</p>
             </div>
         </footer>
         <script src="./js/menu.js"></script>
