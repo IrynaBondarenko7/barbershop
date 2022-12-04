@@ -737,55 +737,82 @@
                 </ul>
             </div>
         </section>
-        <!------------------------CONTACTS--------------
-      <section class="contacts">
-        <div class="container">
-          <div>
-            <h2>Online-booking</h2>
-            <form>
-              <label>
-                <input type="text" />
-              </label>
-              <label>
-                <input type="text" />
-              </label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-              <button type="submit">Send</button>
-            </form>
-          </div>
-          <div>
-            <h2>Contacts</h2>
-            <ul>
-              <li>
-                <a href="">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#icon-map-pin"></use>
-                  </svg>
-                  st. Vasilkovaya, 7A Kiev, 08132
-                </a>
-              </li>
-              <li>
-                <a href=""
-                  ><svg width="24" height="24">
-                    <use href="./images/sprite.svg#icon-phone"></use>
-                  </svg>
-                  +38 044 111 11 11</a
-                >
-              </li>
-              <li>
-                <a href=""
-                  ><svg width="24" height="24">
-                    <use href="./images/sprite.svg#icon-mail"></use>
-                  </svg>
-                  barbershop@email.com</a
-                >
-              </li>
-            </ul>
-            <p>Working hours</p>
-            <p>Every day from 9:00 to 22:00</p>
-          </div>
+        <!------------------------ONLINE-------------->
+        <div class="contacts-box-wrap">
+                <section class="online section-padding">
+                    <div class="container">
+                    <h2 class="section-title title-dark">Online-booking</h2>
+                    <form class="online-form">
+                        <div class="modal-field">
+                            <input
+                                type="text"
+                                name="user-name"
+                                class="online-input online-item"
+                                placeholder="Name*"
+                            />
+                        </div>
+                        <div class="modal-field">
+                            <input
+                                type="tel"
+                                name="user-tel"
+                                class="online-input online-item"
+                                placeholder="Phone*"
+                            />
+                        </div>
+                        <div class="modal-field">
+                            <textarea
+                                name="user-comment"
+                                placeholder="Message"
+                                class="online-textarea online-item"
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-online">
+                            Send
+                        </button>
+                    </form>
+                    </div>
+                </section>
+                <!----------------------CONTACTS-------------->
+         <section class="contscts section-padding">
+            <div class="container">
+                    <h2 class="section-title title-dark">Contacts</h2>
+                    <div class="contacts-list-wrap">
+                    <ul class="contacts-list">
+                        <li class="contacts-item">
+                            <a href="#" class="contacts-item-link contacts-link-map" target="_blank"
+                                    rel="noopener noreferrer nofollow">
+                            <svg width="24" height="24" class="contacts-icon">
+                                <use href="./images/sprite.svg#icon-map-pin"></use>
+                            </svg>
+                            st. Vasilkovaya, 7A Kiev, 08132
+                            </a>
+                        </li>
+                        <li class="contacts-item">
+                            <a href="#" class="contacts-item-link contacts-link-tel"
+                            ><svg width="24" height="24" class="contacts-icon">
+                                <use href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 044 111 11 11</a
+                            >
+                        </li>
+                        <li class="contacts-item">
+                            <a href="#" class="contacts-item-link contacts-link-mail" 
+                            ><svg width="24" height="24" class="contacts-icon">
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                            barbershop@email.com</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="contacts-text-wrap">
+            <p class="pretitle contacts-pretitle">Working hours</p>
+            <p class="contacts-text">Every day from 9:00 to 22:00</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
         </div>
-      </section>
+        
     </main>
     <!--------------------FOOTER-------------------------->
         <footer>

@@ -1,0 +1,73 @@
+.contscts {
+    background-image: url(../images/contacts/contacts-bg-mob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include retina {
+        background-image: url(../images/contacts/contacts-bg-mob-2x.png);
+    }
+
+    @media screen and (min-width: 481px) {
+        background-image: url(../images/contacts/contacts-bg-tab.png);
+        @include retina {
+            background-image: url(../images/contacts/contacts-bg-tab-2x.png);
+        }
+    }
+    @media screen and (min-width: 769px) {
+        background-image: url(../images/contacts/contacts-bg-desk.png);
+        @include retina {
+            background-image: url(../images/contacts/contacts-bg-desk-2x.png);
+        }
+    }
+}
+.contacts-list-wrap {
+    @include tablet {
+        display: flex;
+        gap: 114px;
+    }
+}
+.contacts-list {
+    margin-bottom: 44px;
+}
+.contacts-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.contacts-item-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 3vw;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+    @include mobile {
+        font-size: 18px;
+    }
+}
+.contacts-link-map {
+    font-weight: 700;
+}
+.contacts-link-tel {
+    font-weight: 400;
+}
+.contacts-link-mail {
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+.contacts-icon {
+    stroke: #9da4bd;
+    fill: transparent;
+}
+.contacts-pretitle {
+    color: $mainwhiteColor;
+}
+
+.contacts-text {
+    font-size: 3vw;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+    @include mobile {
+        font-size: 18px;
+    }
+}

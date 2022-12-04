@@ -1,0 +1,67 @@
+.contacts-box-wrap {
+    background-color: #191c26;
+}
+.online {
+}
+.online-form {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+.modal-field {
+    // @media screen and (max-widht: 767px)
+    margin-bottom: 44px;
+}
+.online-item {
+    border: none;
+    color: $textcolor;
+    outline: transparent;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    background-color: transparent;
+    transition: border-color 250ms linear;
+    &:focus {
+        border-color: $mainwhiteColor;
+    }
+    &:focus::placeholder {
+        color: $mainwhiteColor;
+    }
+}
+.online-input {
+    width: 100%;
+    height: 24px;
+    padding-bottom: 8px;
+    @include tablet {
+        width: 330px;
+    }
+}
+.online-item::placeholder {
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 250ms linear;
+    @include mobile {
+        font-size: 11px;
+    }
+}
+
+.online-textarea {
+    resize: none;
+    width: 100%;
+    height: 76px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 690px;
+    }
+}
+
+.btn-online {
+    @media screen and (max-widht: 767px) {
+        display: block;
+        margin: 0 auto;
+    }
+}
