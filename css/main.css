@@ -302,7 +302,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: auto;
 }
 
 .icon-close {
@@ -346,7 +345,7 @@ body {
 }
 
 .contacts-wrap {
-  margin-bottom: 76px;
+  margin-bottom: 64px;
 }
 
 .menu-soc-list {

@@ -107,7 +107,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: auto;
 }
 .icon-close {
     fill: $titleColor;
@@ -145,7 +144,7 @@
     }
 }
 .contacts-wrap {
-    margin-bottom: 76px;
+    margin-bottom: 64px;
 }
 .menu-soc-list {
     position: relative;
