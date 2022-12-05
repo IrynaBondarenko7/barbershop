@@ -280,13 +280,14 @@ body {
 }
 
 .mobile-menu {
-  width: 70vw;
+  width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: rgba(25, 28, 38, 0.2);
   top: 0;
   right: 0;
   position: fixed;
   z-index: 1;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -294,14 +295,22 @@ body {
   }
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 .container-menu {
   padding: 48px 31px 48px 40px;
-  width: 100%;
+  width: 70%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
   overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .icon-close {

@@ -12,6 +12,7 @@
     refs.menuList.addEventListener('click', removeMenu);
 
     function toggleMenu() {
+        document.body.classList.toggle('menu-open');
         refs.menu.classList.toggle('is-hidden');
         refs.body.classList.toggle('no-scroll');
     }
