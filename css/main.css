@@ -185,7 +185,21 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    gap: 37px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-container {
+    gap: 249px;
+  }
 }
 
 .header-nav {
@@ -653,7 +667,6 @@ body.menu-open {
 }
 @media screen and (min-width: 769px) {
   .prices {
-    height: 692px;
     max-width: 1600px;
     background-image: url(../images/prices/prices-bg-desk.png);
   }
