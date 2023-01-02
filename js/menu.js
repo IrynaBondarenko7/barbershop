@@ -20,5 +20,6 @@
     function removeMenu() {
         refs.menu.classList.add('is-hidden');
         refs.body.classList.remove('no-scroll');
+        document.body.classList.toggle('menu-open');
     }
 })();
