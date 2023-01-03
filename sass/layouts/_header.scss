@@ -3,6 +3,7 @@
     padding-bottom: 40px;
     position: absolute;
     width: 100%;
+    z-index: 50;
     @include desktop {
         padding-right: 17px;
     }
@@ -40,6 +41,9 @@
     @include tablet {
         display: flex;
         align-items: center;
+        gap: 20px;
+    }
+    @include desktop {
         gap: 30px;
     }
 }

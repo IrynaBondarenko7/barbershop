@@ -11,6 +11,10 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -262,12 +266,14 @@
     </div>   
   </div>      
                     <div class="hero-text-wrap">
+                        <div class="hero-text-box">
                     <p class="hero-pretitle">A hair salon for men in Kyiv</p>
                     <h1 class="hero-title">BarberShop</h1>
                     <p class="hero-text">
                         We are experts in trendy men’s haircuts. We work
                         quickly, carefully and with style.
                     </p>
+                      </div>
                 </div>
                 </div>
 
@@ -922,5 +928,22 @@
             </div>
         </footer>
         <script src="./js/menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+      var swiper = new Swiper('.mySwiper', {
+  speed: 3000,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+      
+    </script>
     </body>
 </html>
